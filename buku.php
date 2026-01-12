@@ -54,7 +54,7 @@ if ($result->num_rows > 0) {
                 <td><?php echo $row['judul']; ?></td>
                 <td><?php echo $row['stok']; ?></td>
                 <td>Rp <?php echo number_format($row['harga'], 0, ',', '.'); ?></td>
-                <td><a href="bukuedit.php?idbuku=<?php echo $row['idbuku']; ?>" class="btn btn-warning">Edit</a></td>
+                <td><a href="bukuedit.php?idbuku=<?php echo $row['idbuku']; ?>" class="btn btn-info">Edit</a></td>
                 <td>
                     <form method="post" action="buku.php" onsubmit="return confirm('Apakah Anda yakin ingin menghapus data ini?');">
                         <input type="hidden" name="id" value="<?php echo $row['idbuku']; ?>">
